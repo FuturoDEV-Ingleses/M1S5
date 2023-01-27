@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>M1S5_A1_Servlets</display-name>
+  
+  <!-- Hellow Servlet -->
+  <servlet>
+  	<servlet-name>HellowServlet</servlet-name>
+  	<servlet-class>Servlets.HellowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HellowServlet</servlet-name>
+  	<url-pattern>/hellow</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Informa Mensagem Servlet -->
+  <servlet>
+  	<servlet-name>InformaMensagemServlet</servlet-name>
+  	<servlet-class>Servlets.InformaMensagemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InformaMensagemServlet</servlet-name>
+  	<url-pattern>/informa</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Recebe Mensagem Servlet -->
+  <servlet>
+  	<servlet-name>receberMensagem</servlet-name>
+  	<servlet-class>Servlets.RecebeMensagemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>receberMensagem</servlet-name>
+  	<url-pattern>/receberMensagem</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Mensagem -->
+  <servlet>
+  	<servlet-name>mensagem</servlet-name>
+  	<servlet-class>Servlets.MensagemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mensagem</servlet-name>
+  	<url-pattern>/mensagem</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
